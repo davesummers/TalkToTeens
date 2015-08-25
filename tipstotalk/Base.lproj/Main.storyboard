@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Talk2Teens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips for talking" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-Mr-iK1">
+                                <rect key="frame" x="41" y="28" width="130" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SSandCO" translatesAutoresizingMaskIntoConstraints="NO" id="uec-sN-PNW">
+                                <rect key="frame" x="463" y="28" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QUL-wE-C4r"/>
+                                    <constraint firstAttribute="height" constant="100" id="w6X-H3-jqL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question of the Day?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzL-pg-LQF">
+                                <rect key="frame" x="16" y="148" width="568" height="383"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="365" translatesAutoresizingMaskIntoConstraints="NO" id="JB4-8E-eca">
+                                <rect key="frame" x="253" y="551" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="T3i-MR-KnI"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EzL-pg-LQF" firstAttribute="top" secondItem="uec-sN-PNW" secondAttribute="bottom" constant="20" id="2Ox-Hs-gZl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uec-sN-PNW" secondAttribute="trailing" constant="21" id="54w-I5-IhY"/>
+                            <constraint firstItem="JB4-8E-eca" firstAttribute="top" secondItem="EzL-pg-LQF" secondAttribute="bottom" constant="20" id="MF0-wq-Nmv"/>
+                            <constraint firstItem="EzL-pg-LQF" firstAttribute="centerX" secondItem="JB4-8E-eca" secondAttribute="centerX" id="Rio-B9-SFn"/>
+                            <constraint firstItem="uec-sN-PNW" firstAttribute="centerY" secondItem="SPf-Mr-iK1" secondAttribute="centerY" id="WH5-ZW-AuS"/>
+                            <constraint firstAttribute="centerX" secondItem="JB4-8E-eca" secondAttribute="centerX" id="WV2-eq-dis"/>
+                            <constraint firstItem="uec-sN-PNW" firstAttribute="bottom" secondItem="SPf-Mr-iK1" secondAttribute="bottom" id="cTx-7W-Fl2"/>
+                            <constraint firstItem="uec-sN-PNW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="gQH-Hz-5qb"/>
+                            <constraint firstItem="EzL-pg-LQF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mrN-av-5lL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JB4-8E-eca" secondAttribute="bottom" constant="20" id="niM-C2-V8O"/>
+                            <constraint firstItem="SPf-Mr-iK1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="szv-4q-clE"/>
+                            <constraint firstItem="uec-sN-PNW" firstAttribute="top" secondItem="SPf-Mr-iK1" secondAttribute="top" id="zsQ-f1-v6x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Question" destination="EzL-pg-LQF" id="qD6-06-bSb"/>
+                        <outlet property="dateLabel" destination="SPf-Mr-iK1" id="fjG-Se-BNQ"/>
+                        <outlet property="stepper" destination="JB4-8E-eca" id="tLZ-pC-sGD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541" y="461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SSandCO" width="550" height="550"/>
+    </resources>
+</document>
