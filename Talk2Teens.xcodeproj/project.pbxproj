@@ -14,7 +14,6 @@
 		111E27DB1B65C4BD0066E5F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111E27DA1B65C4BD0066E5F5 /* Images.xcassets */; };
 		111E27DE1B65C4BD0066E5F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111E27DC1B65C4BD0066E5F5 /* LaunchScreen.xib */; };
 		111E27EA1B65C4BD0066E5F5 /* tipstotalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E27E91B65C4BD0066E5F5 /* tipstotalkTests.swift */; };
-		111E27F41B65C8BB0066E5F5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111E27F31B65C8BB0066E5F5 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,6 @@
 		111E27E31B65C4BD0066E5F5 /* Talk2TeensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Talk2TeensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		111E27E81B65C4BD0066E5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		111E27E91B65C4BD0066E5F5 /* tipstotalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipstotalkTests.swift; sourceTree = "<group>"; };
-		111E27F31B65C8BB0066E5F5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 				111E27DC1B65C4BD0066E5F5 /* LaunchScreen.xib */,
 				111E27D21B65C4BD0066E5F5 /* tipstotalk.xcdatamodeld */,
 				111E27CE1B65C4BD0066E5F5 /* Supporting Files */,
-				111E27F31B65C8BB0066E5F5 /* Media.xcassets */,
 			);
 			path = tipstotalk;
 			sourceTree = "<group>";
@@ -200,7 +197,6 @@
 			files = (
 				111E27D91B65C4BD0066E5F5 /* Main.storyboard in Resources */,
 				111E27DE1B65C4BD0066E5F5 /* LaunchScreen.xib in Resources */,
-				111E27F41B65C8BB0066E5F5 /* Media.xcassets in Resources */,
 				111E27DB1B65C4BD0066E5F5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +349,7 @@
 				INFOPLIST_FILE = tipstotalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Talk2Teens;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -363,6 +360,7 @@
 				INFOPLIST_FILE = tipstotalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Talk2Teens;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

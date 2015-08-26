@@ -3,7 +3,7 @@
 //  tipstotalk
 //
 //  Created by Zac Summers on 7/26/15.
-//  Copyright (c) 2015 Zachary Summers. All rights reserved.
+//  Copyright (c) 2015 Simple Simon and Co. All rights reserved.
 //
 
 import UIKit
